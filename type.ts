@@ -38,3 +38,40 @@ console.log(-2 / 0);//infinity
 console.log(-2 / 0);//infinity
 i = 18;
 i = 'hello';
+
+
+const economy = 0;
+const business = 1;
+const first = 2;
+
+enum FlightClass {
+    ECONOMY,
+    BUSIINESS,
+    FIRST,
+}
+
+const passenger = FlightClass.BUSIINESS;
+
+let passengerClass: FlightClass = FlightClass.FIRST;
+let z: unknown;
+
+function sumOfNumber(num1: number, num2: number) {
+    return num1 + num2;
+}
+
+
+function sumOfNumber3(num1: number, num2: number): any {
+    return num1 + num2;
+}
+
+const sumOfNumber2 =
+    (num1: number, num2: number) => {
+        return num1 + num2;
+    }
+
+const fruits = ['apple', 'banana', 'orange'];
+
+fruits.map((fruits: string): string => {
+    console.table(`Fruit is ${fruits}`)
+    return `Fruit is ${fruits}`;
+})
