@@ -75,3 +75,14 @@ fruits.map((fruits: string): string => {
     console.table(`Fruit is ${fruits}`)
     return `Fruit is ${fruits}`;
 })
+
+
+type animal = string;
+type appID = number;
+type joinDate = Date;
+type bool = boolean;
+
+let aa: animal = "Cat";
+let bb: appID = 1200;
+let cc: joinDate = Date.now();
+let dd: bool = true;
