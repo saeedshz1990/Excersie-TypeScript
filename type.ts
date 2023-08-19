@@ -84,5 +84,47 @@ type bool = boolean;
 
 let aa: animal = "Cat";
 let bb: appID = 1200;
-let cc: joinDate = Date.now();
+var cc: joinDate;
 let dd: bool = true;
+
+let uvar1: string | number;
+uvar1 = "hello";
+uvar1 = 85;
+// uvar1=false;
+
+let uvar2: (string | number)[] = ['1', 'b', 'a', 85];
+
+function applyNewUserDiscount(price: number | string): number {
+    //narowing
+    if (typeof price === "string") {
+        price = parseInt(price)
+    }
+    return price - (price - 0.3);
+}
+
+let company: 'Google' | 'Amazon';
+company = 'Amazon';
+
+let size: 's' | 'm' | 'xl' | 'xs';
+size = 'xl';
+type yy = string | number;
+type admin = { email: string, password: string, id: number, canModified: true };
+type menber = { email: string, password: string, id: number, canModified: false, isAccess: true };
+type manager = admin | menber;
+
+//type z=string & number;
+type colorful = {
+    color: string
+};
+type circle = {
+    radius: number
+};
+
+type colorfulCircle = colorful & circle;
+
+function draw(circle: colorfulCircle) {
+    console.log(`color is ${circle.color}`);
+    console.log(`raduis is ${circle.radius}`);
+}
+//interscetion
+draw({color: 'red', radius: 85})
