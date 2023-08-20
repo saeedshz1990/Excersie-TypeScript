@@ -108,7 +108,7 @@ company = 'Amazon';
 let size: 's' | 'm' | 'xl' | 'xs';
 size = 'xl';
 type yy = string | number;
-type admin = { email: string, password: string, id: number, canModified: true };
+type admin1 = { email: string, password: string, id: number, canModified: true };
 type menber = { email: string, password: string, id: number, canModified: false, isAccess: true };
 type manager = admin | menber;
 
@@ -126,5 +126,6 @@ function draw(circle: colorfulCircle) {
     console.log(`color is ${circle.color}`);
     console.log(`raduis is ${circle.radius}`);
 }
+
 //interscetion
 draw({color: 'red', radius: 85})
