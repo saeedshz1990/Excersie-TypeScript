@@ -10,6 +10,7 @@ class Customer {
         // this.name = name;
         // this.email = email;
         // this.mobile = mobiile
+
     }
 
     get productCount() {
